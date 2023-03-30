@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Okom Emmanuel</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="work.js"></script>
+
+<link rel="stylesheet" href="style.css">
+  </head>
+<style>
+	
+	i{
+		color:white;
+		display:inline;
+	}
+	nav a{
+		color:white;
+		
+	}
+	
+	
+ a:hover{
+		color:orange;
+		text-decoration:none;
+	}
+</style>
+<body>
+
+	<header>
+		
+		<nav>
+			<ul>
+				<!--<li><img src="images/passport.jpg" class="rounded-circle" width="100"  alt="Profile Picture"></li>-->
+				<li> <a href="#"><i class="fa-solid fa-home"></i><span> Home</span></a></li>
+				
+				<li><a href="#workContent"><i class="fa-solid fa-eye"></i><span>  Work</span></a></li>
+				
+				<li><a href="#"><i class="fa-solid fa-download"></i><span> Download CV</span></a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<!--<span><i class="fa-solid fa-bars" style="color:black" onclick="welcome()"></i></span>-->
+		<section>
+			<h3>Name:<span>Okom Emmanuel</span></h3>
+			<h4>State of Residence:<span>Lagos State</span></h4>
+			<h4>Phone No:<span>+2348103141818 </span></h4>
+			<h4>Email:<span>okomemmanuel1@gmail.com</span></h4><br>
+			<p id="about_me">
+				I am a full stack developer with over 5 years experience working with Html, 
+				CSS, JavaScript, Bootstrap,Procedural and OOP PHP. I also have core knowledge of Laravel, Docker, Vue and Vuex. 
+				I have experience working with servers such as Digital Ocean, Heroku etc. I also use GitHub Action as well as
+				Jenkins to set up CI/CD.
+			</P>
+		</section>
+		<section>
+			
+			<h2>Skills</h2>
+			<ul id="skill" class="d-flex flex-wrap">
+				
+			</ul>
+			
+		</section>
+		<section>
+			
+			<h2>My Work</h2>
+			<!--- Loaded through Javascript-->
+			 <div id="workContent"></div>
+			
+			
+		</section>
+		
+		
+	</main>
+	
+</body>
+<script>
+
+document.getElementById('workContent').innerHTML = workContent;
+document.getElementById('skill').innerHTML = allSkill;
+</script>
+</html>
